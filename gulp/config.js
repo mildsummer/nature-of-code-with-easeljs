@@ -1,6 +1,5 @@
 var src     = 'source/';      // 元ファイル
-var dist    = '.temp/';     // コンパイル先
-var build = 'build/';  // リリース時
+var dist    = 'dist/';     // コンパイル先
 
 // root path
 var root = require( 'path' ).join( __dirname, '../' );
@@ -8,10 +7,6 @@ var root = require( 'path' ).join( __dirname, '../' );
 module.exports = {
   // root
   'root' : root,
-
-  // flag処理
-  'isBuildFlag' : false,
-  'isEjsAllFlag'  : true,
 
   'src': {
     'root'  : src,
@@ -29,21 +24,6 @@ module.exports = {
     'img'   : dist + 'images/',
     'sprite': dist + 'materials/',
     'js'    : dist + 'javascripts/'
-  },
-
-  'build': {
-    'root'  : build,
-    'html'  : build,
-    'css'   : build + 'stylesheets/',
-    'img'   : build + 'images/',
-    'sprite': build + 'materials/',
-    'js'    : build + 'javascripts/'
-  },
-
-  // copyするファイル
-  'copy': [
-    '**/*.ico',
-    'src/materials/*.*'
-  ]
+  }
 
 };

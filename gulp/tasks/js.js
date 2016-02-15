@@ -9,7 +9,6 @@ var config  = require('../config');
 // javascripts
 var webpack = require('webpack-stream');
 var named = require('vinyl-named');
-var source = require('vinyl-source-stream');
 var uglify = require('gulp-uglify');
 var buffer = require('vinyl-buffer');
 
